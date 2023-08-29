@@ -1,21 +1,29 @@
-header {
+.header {
     background-color: blue;
     color: white;
+    padding: 10px 0;
     display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Adjust the width as needed */
+  .header-content {
+    width: 90%; /* Change this value to control the width */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
   .nav-list {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
   }
   
   .nav-item {
-    margin-left: 20px; /* Adjust as needed */
+    margin-left: 20px;
   }
   
   .nav-item:first-child {
@@ -26,5 +34,21 @@ header {
     text-decoration: none;
     color: white;
     font-weight: bold;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
   }
   
