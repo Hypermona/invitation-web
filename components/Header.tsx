@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 type Props = {};
 
 const Header = (props: Props) => {
+  const router = useRouter()
   return (
     <header>
       <nav className="flex p-5">
