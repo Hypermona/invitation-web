@@ -11,7 +11,7 @@ const Header = (props: Props) => {
         <div className="px-5 pt-2">Templates</div>
         <div className="px-5 pt-2">Plugins</div>
         <div className="px-5 pt-2">How to Use</div>
-         <Link href="/login"><Button className="px-5">Login</Button></Link>
+         <Button onClick={() => router.push('/login')} className="px-5">Login</Button>
         
       </nav>
     </header>
