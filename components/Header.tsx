@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 type Props = {};
 
 const Header = (props: Props) => {
